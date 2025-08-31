@@ -1,0 +1,9 @@
+    [mgr]
+    show_hidden = true
+    [window]
+    opacity = 0.9
+        [opener]
+    edit = [
+        { run = 'nvim "$@"', block = true, for = "unix" },
+        { run = '%EDITOR% %*', block = true, for = "windows" }, # Fallback for Windows or if $EDITOR is preferred
+    ]
