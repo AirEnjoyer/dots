@@ -5,3 +5,16 @@ cd ~/dots
 sudo mv -v catppuccin-mocha-mauve /usr/share/sddm/themes
 sudo echo echo "[Theme]
 Current=catppuccin-mocha-mauve" >> /etc/sddm.conf
+
+
+Fastfetch:
+![image](https://imgur.com/jtsiYds)
+
+Neovim:
+![image](https://imgur.com/PcViKjz)
+
+yazi:
+![image](https://imgur.com/y9gKkPs)
+
+wofi:
+![image](https://imgur.com/ykESK5S)
