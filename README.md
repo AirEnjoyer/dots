@@ -5,3 +5,5 @@ cd ~/dots
 sudo mv -v catppuccin-mocha-mauve /usr/share/sddm/themes
 sudo echo echo "[Theme]
 Current=catppuccin-mocha-mauve" >> /etc/sddm.conf
+
+
