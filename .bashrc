@@ -5,6 +5,9 @@
 export HYPRSHOT_DIR="~/Screenshots"
 eval "$(starship init bash)"
 
+alias comp="clang main.c"
+alias run="./a.out"
+
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
 
