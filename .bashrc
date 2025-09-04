@@ -7,6 +7,7 @@ eval "$(starship init bash)"
 
 alias comp="clang main.c"
 alias run="./a.out"
+alias comprun"clang main.c & ./a.out"
 
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
