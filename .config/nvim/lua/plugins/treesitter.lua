@@ -7,18 +7,11 @@ return {
       config.setup({
         auto_install = true,
         ensure_installed = {
-          "bash",
-          "ruby",
-          "html",
-          "css",
-          "scss",
-          "javascript",
-          "typescript",
-          "json",
-          "lua",
+         
+          "c",
         },
         highlight = { enable = true },
-        indent = { enable = false },
+        indent = { enable = true },
       })
     end
   }
