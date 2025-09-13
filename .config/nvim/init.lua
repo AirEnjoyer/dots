@@ -5,7 +5,7 @@ if not vim.loop.fs_stat(lazypath) then
     "clone",
     "--filter=blob:none",
     "https://github.com/folke/lazy.nvim.git",
-    "--branch=stable", -- latest stable release
+    "--branch=stable",
     lazypath,
   })
 end
@@ -13,3 +13,9 @@ vim.opt.rtp:prepend(lazypath)
 
 require("vim-options")
 require("lazy").setup("plugins")
+require("keymaps")
+
+vim.cmd("colorscheme blue-moon")
+-- vim.cmd("colorscheme rose-pine-moon")
+
+    vim.opt.clipboard = "unnamedplus"

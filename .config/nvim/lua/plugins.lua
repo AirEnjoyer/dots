@@ -10,6 +10,9 @@ return {
     end
   },
 
+    {'akinsho/toggleterm.nvim', version = "*", config = true},
+
+
   -- Completion engine
   {
     'hrsh7th/nvim-cmp',

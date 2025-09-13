@@ -23,4 +23,5 @@
     { name = "*.png", use = "image"},
     { name = "*.jpeg", use = "image"},
     { name = "*.pdf", use = "pdf"},
+    { name = "*.txt", use = "edit"},
     ]
