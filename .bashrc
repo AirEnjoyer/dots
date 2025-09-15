@@ -22,6 +22,7 @@ alias c="clang main.c && ./a.out"
 [[ $- != *i* ]] && return
 
 alias f='clear &&fastfetch'
+alias bat='batcat'
 alias ls='ls --color=auto'
 alias grep='grep --color=auto'
 PS1='[\u@\h \W]\$ '
