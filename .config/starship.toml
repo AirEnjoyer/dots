@@ -1,44 +1,37 @@
 "$schema" = 'https://starship.rs/config-schema.json'
 
 format = """
-[](grey)\
+[](g_8)\
 $os\
 $username\
-[](bg:purple fg:grey)\
+[](bg:red_glowing fg:g_8)\
 $directory\
-[](fg:purple bg:red)\
+[](fg:red_glowing bg:red_ember)\
 $git_branch\
 $git_status\
-[](fg:red bg:blue)\
+[](fg:red_ember bg:red_flame)\
 $c\
 $rust\
-$golang\
-$nodejs\
-$php\
-$java\
-$kotlin\
-$haskell\
-$python\
-[](fg:blue bg:pink)\
+[](fg:red_flame bg:red_glowing)\
 $time\
-[ ](fg:pink)\
+[ ](fg:red_glowing)\
 $line_break$character"""
 
 palette = 'AirEnjoyer'
 
 
-[palettes.AirEnjoyer]
-purple = "#BC9AE6"
-grey = "#313244"
-red = "#EBA0AC"
-blue = "#89b4fa"
-pink = "#FF7BFF"
 
-text = "#BC9AE6"
+[palettes.AirEnjoyer]
+red_flame = "#C53030"
+g_8 = "#323232"
+red_ember_glow = "#D87C4A"
+red_ember = "#B14242"
+red_glowing = "#DF6464"
+text = "#B4B4B4"
 
 [os]
 disabled = false
-style = "bg:grey fg:text"
+style = "bg:g_8 fg:text"
 
 [os.symbols]
 Windows = "󰍲"
@@ -63,12 +56,12 @@ RedHatEnterprise = "󱄛"
 
 [username]
 show_always = true
-style_user = "bg:grey fg:text"
-style_root = "bg:grey fg:text"
+style_user = "bg:g_8 fg:text"
+style_root = "bg:g_8 fg:text"
 format = '[ $user ]($style)'
 
 [directory]
-style = "fg:grey bg:purple"
+style = "fg:g_8 bg:red_glowing"
 format = "[ $path ]($style)"
 truncation_length = 3
 truncation_symbol = "…/"
@@ -82,73 +75,40 @@ truncation_symbol = "…/"
 
 [git_branch]
 symbol = ""
-style = "bg:blue"
-format = '[[ $symbol $branch ](fg:grey bg:red)]($style)'
+style = "fg:g_8 bg:red_ember"
+format = '[[ $symbol $branch ](fg:g_8 bg:red_ember)]($style)'
 
 [git_status]
-style = "bg:blue"
-format = '[[($all_status$ahead_behind )](fg:grey bg:red)]($style)'
+style = "fg:g_8 bg:red_ember"
+format = '[[($all_status$ahead_behind )](fg:g_8 bg:red_ember)]($style)'
 
-[nodejs]
-symbol = ""
-style = "bg:blue"
-format = '[[ $symbol( $version) ](fg:grey bg:blue)]($style)'
 
 [c]
 symbol = " "
-style = "bg:blue"
-format = '[[ $symbol( $version) ](fg:grey bg:blue)]($style)'
+style = "fg:g_8 bg:red_flame"
+format = '[[ $symbol( $version) ](fg:g_8 bg:red_flame)]($style)'
 
 [rust]
 symbol = ""
-style = "bg:blue"
-format = '[[ $symbol( $version) ](fg:grey bg:blue)]($style)'
+style = "fg:g_8 bg:red_ember"
+format = '[[ $symbol( $version) ](fg:g_8 bg:red_ember)]($style)'
 
-[golang]
-symbol = ""
-style = "bg:blue"
-format = '[[ $symbol( $version) ](fg:grey bg:blue)]($style)'
-
-[php]
-symbol = ""
-style = "bg:blue"
-format = '[[ $symbol( $version) ](fg:grey bg:blue)]($style)'
-
-[java]
-symbol = " "
-style = "bg:blue"
-format = '[[ $symbol( $version) ](fg:grey bg:blue)]($style)'
-
-[kotlin]
-symbol = ""
-style = "bg:blue"
-format = '[[ $symbol( $version) ](fg:grey bg:blue)]($style)'
-
-[haskell]
-symbol = ""
-style = "bg:blue"
-format = '[[ $symbol( $version) ](fg:grey bg:blue)]($style)'
-
-[python]
-symbol = ""
-style = "bg:blue"
-format = '[[ $symbol( $version) ](fg:grey bg:blue)]($style)'
 
 
 [time]
 disabled = false
 time_format = "%R"
-style = "bg:pink"
-format = '[[  $time ](fg:grey bg:pink)]($style)'
+style = "fg:g_8 bg:red_glowing"
+format = '[[  $time ](fg:g_8 bg:red_glowing)]($style)'
 
 [line_break]
 disabled = false
 
 [character]
 disabled = false
-success_symbol = '[](bold fg:red)'
-error_symbol = '[](bold fg:red)'
-vimcmd_symbol = '[](bold fg:red)'
-vimcmd_replace_one_symbol = '[](bold fg:purple)'
-vimcmd_replace_symbol = '[](bold fg:purple)'
-vimcmd_visual_symbol = '[](bold fg:purple)'
+success_symbol = '[](bold fg:red_glowing)'
+error_symbol = '[](bold fg:red_glowing)'
+vimcmd_symbol = '[](bold fg:red_glowing)'
+vimcmd_replace_one_symbol = '[](bold fg:red_ember)'
+vimcmd_replace_symbol = '[](bold fg:red_ember)'
+vimcmd_visual_symbol = '[](bold fg:red_ember)'

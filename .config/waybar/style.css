@@ -1,7 +1,7 @@
-@import "mocha.css"; 
+@import "ashen.css"; 
 
 * {
-    font-family: "MesloLGS Nerd Font Mono Bold";
+    font-family: "CaskaydiaCove Nerd Font";
     font-size: 16px;
     min-height: 0;
     font-weight: bold;
@@ -9,11 +9,11 @@
 
 window#waybar {
     background: transparent;
-    background-color: @crust;
-    color: @overlay0;
+    background-color: @g_11;
+    color: @g_6;
     transition-property: background-color;
     transition-duration: 0.1s;
-    border-bottom: 1px solid @overlay1;
+    border-bottom: 1px solid @g_6;
 }
 
 #window {
@@ -30,8 +30,8 @@ button {
 
 button:hover {
     background: inherit;
-    color: @mauve;
-    border-top: 2px solid @mauve;
+    color: @red_ember;
+    border-top: 2px solid @red_flame;
 }
 
 #workspaces button {
@@ -39,19 +39,19 @@ button:hover {
 }
 
 #workspaces button.focused {
-    background-color: rgba(0, 0, 0, 0.3);
-    color: @rosewater;
-    border-top: 2px solid @rosewater;
+    background-color: @g_12;
+    color: @orange_glow;
+    border-top: 2px solid @orange_blaze;
 }
 
 #workspaces button.active {
-    background-color: rgba(0, 0, 0, 0.3);
-    color: @mauve;
-    border-top: 2px solid @mauve;
+    background-color: @g_12;
+    color: @red_ember;
+    border-top: 2px solid @red_flame;
 }
 
 #workspaces button.urgent {
-    background-color: #eb4d4b;
+    background-color: @orange_smolder;
 }
 
 #pulseaudio,
@@ -76,37 +76,37 @@ button:hover {
 }
 
 #clock {
-    color: @maroon;
-    border-bottom: 2px solid @maroon;
+    color: @red_ember;
+    border-bottom: 2px solid @red_flame;
 }
 
 #clock.date {
-    color: @mauve;
-    border-bottom: 2px solid @mauve;
+    color: @orange_glow;
+    border-bottom: 2px solid @orange_blaze;
 }
 
 #pulseaudio {
-    color: @blue;
-    border-bottom: 2px solid @blue;
+    color: @red_glowing;
+    border-bottom: 2px solid @red_flame;
 }
 
 #network {
-    color: @yellow;
-    border-bottom: 2px solid @yellow;
+    color: @red_glowing;
+    border-bottom: 2px solid @red_flame;
 }
 
 #idle_inhibitor {
     margin-right: 12px;
-    color: #7cb342;
+    color: @red_ember;
 }
 
 #idle_inhibitor.activated {
-    color: @red;
+    color: @red_flame;
 }
 
 #battery {
-    color: @green;
-    border-bottom: 2px solid @green;
+    color: @red_ember;
+    border-bottom: 2px solid @red_flame;
 }
 
 /* If workspaces is the leftmost module, omit left margin */
@@ -120,7 +120,7 @@ button:hover {
 }
 
 #custom-vpn {
-    color: @lavender;
+    color: @g_4;
     border-radius: 15px;
     padding-left: 6px;
     padding-right: 6px;

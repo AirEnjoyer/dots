@@ -1,26 +1,18 @@
--- Customize Mason
-
 ---@type LazySpec
 return {
-  -- use mason-tool-installer for automatically installing Mason packages
-  {
-    "WhoIsSethDaniel/mason-tool-installer.nvim",
-    -- overrides `require("mason-tool-installer").setup(...)`
-    opts = {
-      -- Make sure to use the names found in `:Mason`
-      ensure_installed = {
-        -- install language servers
-        "lua-language-server",
+    {
+        "WhoIsSethDaniel/mason-tool-installer.nvim",
+        opts = function(_, opts)
+            opts.ensure_installed = vim.tbl_filter(
+                function(tool) return tool ~= "codelldb" end,
+                opts.ensure_installed or {}
+            )
 
-        -- install formatters
-        "stylua",
-
-        -- install debuggers
-        "debugpy",
-
-        -- install any other package
-        "tree-sitter-cli",
-      },
+            vim.list_extend(opts.ensure_installed, {
+                "clangd",
+                "clang-format",
+                "tree-sitter-cli",
+            })
+        end,
     },
-  },
 }
