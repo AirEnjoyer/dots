@@ -19,6 +19,7 @@ require("lazy").setup({
     performance = {
         rtp = {
             disabled_plugins = {
+                "gitsigns",
                 "gzip",
                 "netrwPlugin",
                 "tarPlugin",

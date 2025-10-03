@@ -5,8 +5,15 @@ return {
     opts = {
         config = {
             clangd = {
-                cmd = { "clangd" },
-                filetypes = { "c", "cpp" },
+                cmd = {
+                    "clangd",
+                    "--background-index",
+                    "--clang-tidy",
+                    "--completion-style=detailed",
+                    "--log=error",
+                },
+
+                filetypes = { "cpp" },
             },
         },
     },

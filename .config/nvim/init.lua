@@ -29,6 +29,7 @@ if not pcall(require, "lazy") then
     vim.fn.getchar()
     vim.cmd.quit()
 end
+vim.lsp.set_log_level "WARN"
 
 require "lazy_setup"
 require "mappings"
