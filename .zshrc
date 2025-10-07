@@ -10,6 +10,7 @@ export PATH="$HOME/scripts:$PATH"
 export CMAKE_GENERATOR=Ninja
 
 alias makec='cp ~/CMakeLists.txt ./ && nvim CMakeLists.txt'
+alias makecpp='cp ~/CppMakeLists.txt ./CMakeLists.txt && nvim CMakeLists.txt && cp ~/main.cpp ./ && cmake .'
 
 export HYPRSHOT_DIR="~/Screenshots"
 eval "$(starship init zsh)"
@@ -29,6 +30,7 @@ run() {
 
 [[ $- != *i* ]] && return
 
+alias bat='batcat'
 alias f='clear &&fastfetch'
 alias ls='ls --color=auto'
 alias grep='grep --color=auto'
