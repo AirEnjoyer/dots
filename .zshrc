@@ -9,11 +9,15 @@ export PATH="$HOME/scripts:$PATH"
 
 export CMAKE_GENERATOR=Ninja
 
-alias makec='cp ~/CMakeLists.txt ./ && nvim CMakeLists.txt'
-
+function y() {
+	local tmp="$(mktemp -t "yazi-cwd.XXXXXX")" cwd
+	yazi "$@" --cwd-file="$tmp"
+	IFS= read -r -d '' cwd < "$tmp"
+	[ -n "$cwd" ] && [ "$cwd" != "$PWD" ] && builtin cd -- "$cwd"
+	rm -f -- "$tmp"
+}
 export HYPRSHOT_DIR="~/Screenshots"
 eval "$(starship init zsh)"
-
 run() {
     if [ -z "$1" ]; then
         echo "Usage: run <program> [args...]"
@@ -34,3 +38,5 @@ alias ls='ls --color=auto'
 alias grep='grep --color=auto'
 
 eval "$(zoxide init zsh)"
+
+. "$HOME/.local/share/../bin/env"
