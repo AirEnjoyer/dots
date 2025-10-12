@@ -9,6 +9,8 @@ export PATH="$HOME/scripts:$PATH"
 
 export CMAKE_GENERATOR=Ninja
 
+alias lg='lazygit'
+
 function y() {
 	local tmp="$(mktemp -t "yazi-cwd.XXXXXX")" cwd
 	yazi "$@" --cwd-file="$tmp"
