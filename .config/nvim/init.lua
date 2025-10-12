@@ -34,3 +34,10 @@ vim.lsp.set_log_level "WARN"
 require "lazy_setup"
 require "mappings"
 vim.cmd "colorscheme ashen"
+vim.api.nvim_create_autocmd("BufReadPost", {
+    pattern = "*.pdf",
+    callback = function()
+        local file_path = vim.api.nvim_buf_get_name(0)
+        require("pdfview").open(file_path)
+    end,
+})
