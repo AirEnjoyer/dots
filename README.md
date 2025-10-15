@@ -1,4 +1,3 @@
-This is mostly to maintain my dots when i inevitabley break my install (arch moment) but i'm also happy to share my dots for people who like catppuccin. You can choose which cursors and icons to use by running lxapearance and gnome-tweaks. in lxappearance to get the cursor i used in the screenshot, use catppuccin-mocha-mauve. in gnome-tweaks use catppuccin-mocha-lavender, which will potentially just show up as catpuccin-mocha-la
-
-
-
+Mostly for keeping my dots across different machines, but obviously feel free to us ethem. Just install dependencies, replace config folders with the ones in dots/.config/.
+Themes are based off of ashen.nvim by ficdaf. To work with omarchy just install an extra theme. The link to that theme is:
+https://github.com/AirEnjoyer/omarchy-ashen-theme
