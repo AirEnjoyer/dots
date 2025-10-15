@@ -11,6 +11,7 @@ export CMAKE_GENERATOR=Ninja
 
 alias lg='lazygit'
 
+
 function y() {
 	local tmp="$(mktemp -t "yazi-cwd.XXXXXX")" cwd
 	yazi "$@" --cwd-file="$tmp"
@@ -41,4 +42,3 @@ alias grep='grep --color=auto'
 
 eval "$(zoxide init zsh)"
 
-. "$HOME/.local/share/../bin/env"
