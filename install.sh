@@ -1,3 +1,6 @@
+#!/bin/bash
+rm -rf ~/.config/nvim
+git clone https://github.com/AirEnjoyer/AstroConfig ~/.config/nvim
 cp -r ~/dots/.config/* ~/.config
 cp ~/dots/glad ~/
 
