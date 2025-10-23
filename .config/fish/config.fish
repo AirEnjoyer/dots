@@ -15,17 +15,13 @@ alias ls='ls --color=auto'
 alias grep='grep --color=auto'
 
 function spf
-    set os (uname -s)
-    if test "$os" = Linux
-        set -gx SPF_LAST_DIR "$XDG_STATE_HOME/superfile/lastdir"
-        if not test -n "$XDG_STATE_HOME"
-            set -gx SPF_LAST_DIR "$HOME/.local/state/superfile/lastdir"
-        end
-    end
-    command spf $argv
+    set -gx SPF_LAST_DIR "$HOME/.local/state/superfile/lastdir"
+
+    command spf $(pwd)
+
     if test -f "$SPF_LAST_DIR"
         source "$SPF_LAST_DIR"
-        rm -f "$SPF_LAST_DIR" > /dev/null
+        rm -f -- "$SPF_LAST_DIR" > /dev/null
     end
 end
 

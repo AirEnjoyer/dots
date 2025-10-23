@@ -1,7 +1,0 @@
-To install oh my zsh, make sure you have zsh installed, and then copy and paste the following commands to your terminal
-cp -r ~/dots/.zshrc ~/
-sudo chsh -s $(which zsh)
-sudo zsh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
-git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
-git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
-source ~/.zshrc
