@@ -4,9 +4,9 @@ items="Shut Down\nReboot\nLock\n"
 output=$(echo -e $items | walker --dmenu)
 
 if [[ "$output" == "Reboot" ]]; then
-sudo reboot
+sh -c "sudo reboot"
 elif [[ "$output" == "Shut Down" ]]; then
-sudo poweroff
+sh -c "sudo poweroff"
 elif [[ "$output" == "Lock" ]]; then
-hyprlock
+sh -c "hyprlock"
 fi
