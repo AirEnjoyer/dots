@@ -1,0 +1,8 @@
+[
+{
+  "directory": "/home/nick/dots/install/installer/build",
+  "command": "/usr/bin/clang++ -std=gnu++20 -o CMakeFiles/installer.dir/src/main.cpp.o -c /home/nick/dots/install/installer/src/main.cpp",
+  "file": "/home/nick/dots/install/installer/src/main.cpp",
+  "output": "/home/nick/dots/install/installer/build/CMakeFiles/installer.dir/src/main.cpp.o"
+}
+]

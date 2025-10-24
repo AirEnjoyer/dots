@@ -1,11 +1,8 @@
-set -gx ZSH "$HOME/.oh-my-zsh"
-set -gx ZSH_THEME "robbyrussell"
 set -gx PATH "$HOME/scripts" $PATH
 set -gx SDL_VIDEODRIVER wayland
 set -gx CC clang
 set -gx CXX clang++
 set -gx CMAKE_GENERATOR Ninja
-set -gx HYPRSHOT_DIR "$HOME/Screenshots"
 
 fish_vi_key_bindings
 
@@ -53,4 +50,5 @@ zoxide init fish | source
 if not contains "$HOME/.local/bin" $PATH
     set -gx PATH "$HOME/.local/bin" $PATH
 end
+
     set -U fish_greeting ""

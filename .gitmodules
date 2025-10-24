@@ -1,0 +1,3 @@
+[submodule "install/linuxUtils"]
+	path = install/linuxUtils
+	url = https://github.com/AirEnjoyer/linuxUtils
