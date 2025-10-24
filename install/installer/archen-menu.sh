@@ -5,7 +5,7 @@ choice=$(printf "%s\n" "${options[@]}" | walker --dmenu)
 
 case $choice in
     "Packages")
-        ghostty -e archen-packages
+       ghostty -e archen-packages
         ;;
     "Apps")
         ghostty -e walker
