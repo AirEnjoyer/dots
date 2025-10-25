@@ -25,7 +25,8 @@ set $files spf
 for_window [title="Archen"] floating enable, resize set width 600 px, resize set height 400 px, position set center
 
 
-output * bg /usr/share/backgrounds/sway/Sway_Wallpaper_Blue_1920x1080.png fill
+output * bg ~/.config/sway/wallpapers/1-matte-black.jpg fill
+
 
     bindsym $mod+Return exec $term
 
