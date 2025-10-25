@@ -74,8 +74,8 @@ int main() {
     "superfile",
     "elephant",
     "walker-bin",
-    "wofi",
     "starship",
+    "blueberry",
     "enscript",
     "ghostscript",
     "dosftools",
@@ -90,6 +90,7 @@ int main() {
     "chromium",
     "mako",
     "swayosd",
+    "sway",
     "swaybg",
     "playerctl",
     "xorg-modmap",
@@ -111,5 +112,6 @@ int main() {
   std::system("cp ~/dots/.Xcompose ~/");
 
   installUtils(subdirectories);
+  installFish();
   return 0;
 }

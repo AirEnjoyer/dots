@@ -5,12 +5,12 @@ choice=$(printf "%s\n" "${options[@]}" | walker --dmenu)
 
 case $choice in
     "Packages")
-       ghostty -e archen-packages
+       archen-packages
         ;;
     "Apps")
         ghostty -e walker
         ;;
     "System")
-        ghostty -e archen-system
+        archen-menu-system
         ;;
 esac
