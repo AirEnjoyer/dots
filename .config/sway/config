@@ -39,6 +39,8 @@ output * bg ~/.config/sway/wallpapers/1-matte-black.jpg fill
 
 
     bindsym $mod+alt+space exec archen-menu-master
+    bindsym $mod+Escape exec archen-menu-system
+
 
     bindsym $mod+space exec $menu
     bindsym $mod+b exec $browser
