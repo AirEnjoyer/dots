@@ -109,9 +109,14 @@ int main() {
 
   std::system("cp -rf ~/dots/.config/* ~/.config");
   std::system("cp ~/dots/glad ~/");
-  std::system("cp ~/dots/.Xcompose ~/");
 
   installUtils(subdirectories);
   installFish();
+
+  std::system("sudo pacman -S --needed sddm qt6-svg qt6-virtualkeyboard qt6-multimedia-ffmpeg");
+  std::system("sudo cp ~/dots/sddm.conf /etc/sddm.conf");
+  std::system("sudo cp -rf ~/dots/silent/ /usr/share/sddm/themes/");
+  std::system("sudo cp -r /usr/share/sddm/themes/silent/fonts/* /usr/share/fonts/");
+
   return 0;
 }
