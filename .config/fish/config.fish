@@ -12,7 +12,7 @@ fish_vi_key_bindings
 
 alias lg='lazygit'
 alias f='clear; fastfetch'
-alias ls='ls -A --color=auto'
+alias ls='ls --color=auto'
 alias grep='grep --color=auto'
 alias ...='cd ../..'
 alias ....='cd ../../..'

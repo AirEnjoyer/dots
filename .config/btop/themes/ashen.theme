@@ -1,5 +1,5 @@
 
-theme[main_bg]="121212"
+theme[main_bg]="#121212"
 
 theme[main_fg]="#B4B4B4"
 
