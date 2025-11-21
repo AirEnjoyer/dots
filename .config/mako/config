@@ -1,0 +1,22 @@
+include=~/.config/mako/core.ini
+
+[app-name=Spotify]
+invisible=1
+
+[mode=do-not-disturb]
+invisible=true
+
+[mode=do-not-disturb app-name=notify-send]
+invisible=false
+
+[urgency=critical]
+default-timeout=0
+
+text-color=#B4B4B4
+border-color=#212121
+background-color=#1E1E1E
+padding=10
+border-size=2
+font=CaskaydiaCove Nerd Font
+max-icon-size=32
+outer-margin=20

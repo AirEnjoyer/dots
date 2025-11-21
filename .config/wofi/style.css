@@ -1,0 +1,145 @@
+@define-color background #121212;
+@define-color background-rgb rgb(18, 18, 18);
+@define-color text #B4B4B4;
+@define-color text-rgb rgb(180, 180, 180);
+@define-color red_flame #C53030;
+@define-color red_flame-rgb rgb(197, 48, 48);
+@define-color red_glowing #DF6464;
+@define-color red_glowing-rgb rgb(223, 100, 100);
+@define-color red_ember #B14242;
+@define-color red_ember-rgb rgb(177, 66, 66);
+@define-color orange_glow #D87C4A;
+@define-color orange_glow-rgb rgb(216, 124, 74);
+@define-color orange_blaze #C4693D;
+@define-color orange_blaze-rgb rgb(196, 105, 61);
+@define-color orange_smolder #E49A44;
+@define-color orange_smolder-rgb rgb(228, 154, 68);
+@define-color orange_golden #E5A72A;
+@define-color orange_golden-rgb rgb(229, 167, 42);
+@define-color brown #89492A;
+@define-color brown-rgb rgb(137, 73, 42);
+@define-color brown_dark #322119;
+@define-color brown_dark-rgb rgb(50, 33, 25);
+@define-color blue #4A8B8B;
+@define-color blue-rgb rgb(74, 139, 139);
+@define-color g_1 #E5E5E5;
+@define-color g_1-rgb rgb(229, 229, 229);
+@define-color g_2 #D5D5D5;
+@define-color g_2-rgb rgb(213, 213, 213);
+@define-color g_3 #B4B4B4;
+@define-color g_3-rgb rgb(180, 180, 180);
+@define-color g_4 #A7A7A7;
+@define-color g_4-rgb rgb(167, 167, 167);
+@define-color g_5 #949494;
+@define-color g_5-rgb rgb(148, 148, 148);
+@define-color g_6 #737373;
+@define-color g_6-rgb rgb(115, 115, 115);
+@define-color g_7 #535353;
+@define-color g_7-rgb rgb(83, 83, 83);
+@define-color g_8 #323232;
+@define-color g_8-rgb rgb(50, 50, 50);
+@define-color g_9 #212121;
+@define-color g_9-rgb rgb(33, 33, 33);
+@define-color g_10 #1D1D1D;
+@define-color g_10-rgb rgb(29, 29, 29);
+@define-color g_11 #191919;
+@define-color g_11-rgb rgb(25, 25, 25);
+@define-color g_12 #151515;
+@define-color g_12-rgb rgb(21, 21, 21);
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+* {
+  font-family: 'CaskaydiaCove Nerd Font', monospace;
+  font-size: 14px;
+}
+
+window {
+  margin: 0px;
+  padding: 10px;
+  border: 0.16em solid @red_glowing;
+  border-radius: 0.1em;
+  background-color: @g_9;
+  animation: fadeIn 0.1s ease-in-out both;
+}
+
+
+#inner-box {
+  margin: 5px;
+  padding: 10px;
+  border: none;
+  background-color: @g_9;
+  animation: fadeIn 0.1s ease-in-out both;
+}
+
+
+#outer-box {
+  margin: 5px;
+  padding: 10px;
+  border: none;
+  background-color: @g_9;
+  animation: fadeIn 0.1s ease-in-out both;
+
+}
+
+#scroll {
+  margin: 0px;
+  padding: 10px;
+  border: none;
+  background-color: @g_9;
+}
+
+#input {
+  margin: 5px 20px;
+  padding: 10px;
+  border: none;
+  border-radius: 0.1em;
+  color: @text;
+  background-color: @g_9;
+  animation: fadeIn 0.1s ease-in-out both;
+}
+
+#input image {
+    border: none;
+    color: @red_flame;
+}
+
+#input * {
+  outline: 4px solid @red_ember;
+}
+
+#text {
+  margin: 5px;
+  border: none;
+  color: @text;
+  animation: fadeIn 0.1s ease-in-out both;
+}
+
+#entry {
+  background-color: @g_9;
+}
+
+#entry arrow {
+  border: none;
+  color: @red_ember;
+}
+
+#entry:selected {
+  border: 0.11em solid @red_ember;
+}
+
+#entry:selected #text {
+  color: @red_glowing;
+}
+
+#entry:drop(active) {
+  background-color: @red_glowing;
+}
+
