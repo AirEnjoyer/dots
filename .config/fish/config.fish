@@ -17,8 +17,8 @@ alias grep='grep --color=auto'
 alias ...='cd ../..'
 alias ....='cd ../../..'
 alias xterm='xterm -bg black -fg white'
-alias kbdbrightnessdwn='brightnessctl -d smc::kbd_backlight set 5%-'
-alias kbdbrightnessup='brightnessctl -d smc::kbd_backlight set +5%'
+alias kbdbrightnessdwn='sudo brightnessctl -d smc::kbd_backlight set 5%-'
+alias kbdbrightnessup='sudo brightnessctl -d smc::kbd_backlight set +5%'
 
 
 function spf
