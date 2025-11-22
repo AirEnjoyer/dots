@@ -1,43 +1,43 @@
 Repos and xi
 sudo xbps-install void-repo-nonfree void-repo-multilib void-repo-multilib-nonfree
-sudo xbps-install -Syu xtools
+sudo xbps-install -Suy xtools
 
 This part will take a while, there is like 60 dependencies
 
 Compilers and stuff
-sudo xi -Syu git clang21 cmake dbus-elogind elogind exiftool mesa mesa-dri mesa-32bit mesa-dri-32bit pkg-config polkit polkit-elogind psmisc lua lua-devel luarocks nerd-fonts ninja rust cargo github-cli gtk-layer-shell SDL3 SDL3-devel SDL3_ttf clang-analyzer
+sudo xi -Suy git clang21 cmake dbus-elogind elogind exiftool mesa mesa-dri mesa-32bit mesa-dri-32bit pkg-config polkit polkit-elogind psmisc lua lua-devel luarocks nerd-fonts ninja rust cargo github-cli gtk-layer-shell SDL3 SDL3-devel SDL3_ttf clang-analyzer
 
 Wayland Stuff
-sudo xi -Syu wayland-protocols wayland-utils  wl-clipboard wlroots wlroots-devel wmenu wofi xorg xorg-fonts xorg-server-xwayland xwayland-satellite sddm Waybar brightnessctl ImageMagick
+sudo xi -Suy wayland-protocols wayland-utils  wl-clipboard wlroots wlroots-devel wmenu wofi xorg xorg-fonts xorg-server-xwayland xwayland-satellite sddm Waybar brightnessctl ImageMagick
 
 Pipewire
-sudo xi -Syu wireplumber wireplumber-devel wireplumber-elogind  pipewire pipewire-devel alsa-pipewire playerctl
+sudo xi -Suy wireplumber wireplumber-devel wireplumber-elogind  pipewire pipewire-devel alsa-pipewire playerctl
 
 Bluetooth 
-sudo xi -Syu libspa-bluetooth blueman bluetui bluez
+sudo xi -Suy libspa-bluetooth blueman bluetui bluez
 
 Steam stuff
-sudo xi -Syu libgcc-32bit libdrm-32bit libstdc++-32bit qt6-multimedia qt6-virtualkeyboard  steam
+sudo xi -Suy libgcc-32bit libdrm-32bit libstdc++-32bit qt6-multimedia qt6-virtualkeyboard  steam
 
 Wayland Utils 
-sudo xi -Syu gpicview grim mako slurp grim satty  mono mpv
+sudo xi -Suy gpicview grim mako slurp grim satty  mono mpv
 
 Cli Stuff 
-sudo xi -Syu starship stow fish-shell yt-dlp zoxide zsh fastfetch fzf neovim alacritty     foot  ghostty btop iwd lazygit  vim
+sudo xi -Suy starship stow fish-shell yt-dlp zoxide zsh fastfetch fzf neovim alacritty     foot  ghostty btop iwd lazygit  vim
 
 
 Sway Stuff
-sudo xi -Syu sway SwayOSD
+sudo xi -Suy sway SwayOSD
 
 
 Browser
-sudo xi -Syu vivaldi                            
+sudo xi -Suy vivaldi                            
 
 For me to install drivers for my old ass macbook
-sudo xi broadcom-bt-firmware broadcom-wl-dkms intel-video-accel
+sudo xi -Suy broadcom-bt-firmware broadcom-wl-dkms intel-video-accel
 
 To install sddm theme
-sudo xbps-install -y sddm qt6-svg qt6-virtualkeyboard qt6-multimedia gum
+sudo xbps-install -Suy sddm qt6-svg qt6-virtualkeyboard qt6-multimedia gum
 
 sudo cp -r ~/sddm-astronaut-theme/Fonts/* /usr/share/fonts/
 
@@ -57,4 +57,4 @@ to change default shell to fish
 sudo chsh $USER -s $(which fish)
 
 To install superfile
-bash -c "$(curl -sLo- https://superfile.dev/install.sh)"
+sudo bash -c "$(curl -sLo- https://superfile.dev/install.sh)"
