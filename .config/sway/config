@@ -71,9 +71,14 @@ bindsym XF86AudioLowerVolume exec swayosd-client --output-volume lower
 bindsym XF86AudioMute exec swayosd-client --output-volume mute-toggle
 
 
-#Keychron Wheel + Mod
+#Keychron Wheel + Mod to scroll through workspaces
 bindsym $mod+XF86AudioRaiseVolume workspace next
 bindsym $mod+XF86AudioLowerVolume workspace prev
+
+
+#Keychron wheel + alt to change brightness
+bindsym Alt+XF86AudioRaiseVolume exec swayosd-client --brightness +5
+bindsym Alt+XF86AudioLowerVolume exec swayosd-client --brightness -5
 
 
 bindsym XF86MonBrightnessUp exec swayosd-client --brightness +5
