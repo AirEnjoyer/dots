@@ -5,11 +5,11 @@ set -gx CXX clang++
 set -gx CMAKE_GENERATOR Ninja
 set -gx XDG_RUNTIME_DIR ~/.XDG_DIR
 set -gx EDITOR nvim
-set -gx CMAKE_EXPORT_COMPILE_COMMANDS ON
 
 
 fish_vi_key_bindings
 
+alias bat='batcat'
 alias lg='lazygit'
 alias f='clear; fastfetch'
 alias ls='ls --color=auto'
