@@ -32,3 +32,5 @@ require "autocmds"
 vim.schedule(function()
   require "mappings"
 end)
+
+require("spellwarn").enable()
