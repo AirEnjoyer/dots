@@ -21,15 +21,15 @@ for _, lsp in ipairs(default_servers) do
   })
 end
 
--- vim.lsp.config("clangd", {
---   on_attach = function(client, bufnr)
---     client.server_capabilities.documentFormattingProvider = false
---     client.server_capabilities.documentRangeFormattingProvider = false
---     on_attach(client, bufnr)
---   end,
---   on_init = on_init,
---   capabilities = capabilities,
--- })
+vim.lsp.config("clangd", {
+  on_attach = function(client, bufnr)
+    client.server_capabilities.documentFormattingProvider = false
+    client.server_capabilities.documentRangeFormattingProvider = false
+    on_attach(client, bufnr)
+  end,
+  on_init = on_init,
+  capabilities = capabilities,
+})
 
 vim.lsp.config("lua_ls", {
   on_attach = on_attach,
