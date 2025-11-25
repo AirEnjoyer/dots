@@ -15,9 +15,9 @@ return {
           return "out\\${variant:buildType}"
         end
         return "out/${variant:buildType}"
-      end, -- this is used to specify generate directory for cmake, allows macro expansion, can be a string or a function returning the string, relative to cwd.
+      end,
       cmake_compile_commands_options = {
-        action = "copy", -- available options: soft_link, copy, lsp, none
+        action = "copy",
         target = vim.loop.cwd(),
       },
       cmake_kits_path = nil,
