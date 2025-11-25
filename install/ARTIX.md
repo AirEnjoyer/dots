@@ -56,3 +56,6 @@ sudo chsh $USER -s $(which fish)
 
 To install superfile
 sudo bash -c "$(curl -sLo- https://superfile.dev/install.sh)"
+
+To change dots to be owned by you
+sudo chown $USER -R ~/.config/*

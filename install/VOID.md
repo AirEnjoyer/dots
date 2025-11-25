@@ -25,7 +25,6 @@ sudo xi -Suy gpicview grim mako slurp grim satty  mono mpv
 Cli Stuff 
 sudo xi -Suy starship stow fish-shell yt-dlp zoxide zsh fastfetch fzf neovim alacritty     foot  ghostty btop iwd lazygit  vim
 
-
 Sway Stuff
 sudo xi -Suy sway SwayOSD
 
@@ -54,3 +53,6 @@ sudo chsh $USER -s $(which fish)
 
 To install superfile
 sudo bash -c "$(curl -sLo- https://superfile.dev/install.sh)"
+
+To change dots to be owned by you
+sudo chown $USER -R ~/.config/*
