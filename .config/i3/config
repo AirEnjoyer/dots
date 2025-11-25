@@ -28,7 +28,7 @@ set $up k
 set $right l
 
 
-set $browser chromium
+set $browser vivaldi-snapshot
 set $term alacritty
 set $files spf
 

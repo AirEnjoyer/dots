@@ -39,16 +39,12 @@ sudo xi -Suy broadcom-bt-firmware broadcom-wl-dkms intel-video-accel
 To install sddm theme
 sudo xbps-install -Suy sddm qt6-svg qt6-virtualkeyboard qt6-multimedia gum
 
-sudo cp -r ~/sddm-astronaut-theme/Fonts/* /usr/share/fonts/
+sudo cp -r ~/dots/sddm-astronaut-theme/Fonts/KogniGear.ttf /usr/share/fonts/TTF/
 
 echo "[Theme]
 Current=sddm-astronaut-theme" | sudo tee /etc/sddm.conf
 
-To setup configs 
-for dir in ~/dots/.config/*
-        rm -rf ~/.config/$(basename $dir)
-        end
-        
+For other dotfiles
 cd ~/dots
 stow .
 
