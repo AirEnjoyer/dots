@@ -3,7 +3,6 @@ require "nvchad.mappings"
 local map = vim.keymap.set
 local M = {}
 
-map("n", "<leader>sc", "<cmd>Spellwarn toggle<CR>", { desc = "Toggle spellcheck" })
 map("n", "<leader>w", ":w<CR>", { desc = "Save" })
 map("n", "<leader>q", ":q<CR>", { desc = "Quit" })
 map("n", ";", ":", { desc = "CMD enter command mode" })
