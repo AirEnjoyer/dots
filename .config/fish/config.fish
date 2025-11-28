@@ -19,6 +19,7 @@ alias ....='cd ../../..'
 alias xterm='xterm -bg black -fg white'
 alias kbdbrightnessdwn='sudo brightnessctl -d smc::kbd_backlight set 5%-'
 alias kbdbrightnessup='sudo brightnessctl -d smc::kbd_backlight set +5%'
+alias xr='sudo xbps-remove $argv'
 
 
 function spf
