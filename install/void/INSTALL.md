@@ -11,10 +11,10 @@ Wayland Stuff
 sudo xi -Suy wayland-protocols wayland-utils  wl-clipboard wlroots wlroots-devel wmenu wofi xorg xorg-fonts xorg-server-xwayland xwayland-satellite sddm Waybar brightnessctl ImageMagick
 
 Pipewire
-sudo xi -Suy wireplumber wireplumber-devel wireplumber-elogind  pipewire pipewire-devel alsa-pipewire playerctl
+sudo xi -Suy wireplumber wireplumber-devel wireplumber-elogind  pipewire pipewire-devel alsa-pipewire playerctl libspa-bluetooth
 
 Bluetooth 
-sudo xi -Suy libspa-bluetooth blueman bluetui bluez
+sudo xi -Suy blueman bluetui bluez
 
 Steam stuff
 sudo xi -Suy libgcc-32bit libdrm-32bit libstdc++-32bit qt6-multimedia qt6-virtualkeyboard  steam

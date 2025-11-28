@@ -15,7 +15,7 @@ Compilers and stuff
 yay --noconfirm -Syu git clang cmake dbus  mesa lib32-mesa   pkgconf polkit  psmisc lua  luarocks nerd-fonts ninja rust cargo github-cli-git gtk-layer-shell sdl3_image sdl3_ttf 
 
 Utils Stuff
-yay --noconfirm -Syu  imagemagick-full xorg-fonts
+yay --noconfirm -Syu  imagemagick-full xorg-fonts mpv
 
 Pipewire
 sudo pacman -Syu pipewire pipewire-pulse wireplumber pipewire-alsa playerctl
@@ -24,7 +24,7 @@ Bluetooth
  yay --noconfirm -Syu  blueman bluetuith bluez
 
 Steam 
-yay pacman -Syu steam
+yay  -Syu steam
 
 Cli Stuff 
 yay -Syu starship stow fish yt-dlp zoxide zsh fastfetch fzf neovim alacritty     foot  ghostty btop iwd lazygit  vim
