@@ -28,7 +28,6 @@ sudo xi -Suy starship stow fish-shell yt-dlp zoxide zsh fastfetch fzf neovim ala
 Sway Stuff
 sudo xi -Suy sway SwayOSD
 
-
 Browser
 sudo xi -Suy vivaldi                            
 
