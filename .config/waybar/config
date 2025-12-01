@@ -1,0 +1,12 @@
+{
+  "modules-left": ["sway/workspaces", "sway/window", "sway/mode"],
+  "sway/workspaces": {
+    "disable-scroll": true
+  },
+  "modules-right": [
+    "clock"
+  ],
+  "clock": {
+    "format": "{:%A %B %d %H:%M %p}"
+  }
+}

@@ -1,0 +1,40 @@
+separator=true
+separator_block_width=4
+
+[window title]
+command=xdotool getactivewindow getwindowname
+interval=repeat
+color=#528b8b
+
+[gap]
+full_text=  
+
+
+[gap]
+full_text=  
+
+[gap]
+full_text=  
+
+full_text=    
+command= "date"
+#background=#014a7d
+background=#970618
+color=#222222
+
+[time1]
+full_text=    
+command= "thunderbird"
+#background=#014a7d
+background=#970618
+color=#222222
+
+[time]
+command= date  '+%d-%b-%Y [%I:%M] '
+interval=60
+#color=#014a7d
+color=#222222
+background=#b8b8b8
+
+[gap]
+full_text= 
