@@ -1,0 +1,12 @@
+@font-face {  
+  font-family: "CaskaydiaCove Nerd";  
+    src: url("https://raw.githubusercontent.com/ryanoasis/nerd-fonts/master/patched-fonts/CascadiaCode/CaskaydiaCoveNerdFontMono-Regular.ttf");  
+  font-weight: normal;  
+  font-style: normal;  
+}
+
+* {  
+  -webkit-font-feature-settings: "liga" on, "calt" on;  
+  -webkit-font-smoothing: antialiased;  
+  text-rendering: optimizeLegibility; 
+} 
