@@ -27,7 +27,7 @@ cursor-text = #B4B4B4
 # Font
 font-family = "CaskaydiaCove Nerd Font"
 font-style = Regular
-font-size = 12
+font-size = 9
 
 background-opacity = 0.9
 
