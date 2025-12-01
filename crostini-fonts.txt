@@ -1,0 +1,19 @@
+To change crostini (chromebook linux font) to caskaydia code, go to 
+chrome-untrusted://terminal/html/nassh_preferences_editor.html
+Change the "Text font family" Field to "CaskaydiaCove Nerd" (with the quotes)
+change the "Custom CSS (inline text)" field to :
+
+@font-face {  
+  font-family: "CaskaydiaCove Nerd";  
+    src: url("https://raw.githubusercontent.com/ryanoasis/nerd-fonts/master/patched-fonts/CascadiaCode/CaskaydiaCoveNerdFontMono-Regular.ttf");  
+  font-weight: normal;  
+  font-style: normal;  
+}
+
+* {  
+  -webkit-font-feature-settings: "liga" on, "calt" on;  
+  -webkit-font-smoothing: antialiased;  
+  text-rendering: optimizeLegibility; 
+}
+
+Then exit. Should change the font quickly.
