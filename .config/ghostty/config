@@ -25,7 +25,7 @@ cursor-color = #D35F5F
 cursor-text = #B4B4B4
 
 # Font
-font-family = "CaskaydiaCove Nerd Font"
+font-family = "CaskaydiaMono Nerd Font"
 font-style = Regular
 font-size = 9
 
