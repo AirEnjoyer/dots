@@ -14,7 +14,7 @@ set $down j
 set $up k
 set $right l
 
-output * bg ~/.config/sway/wallpapers/jojo.png fill
+exec swaybg -i ~/.config/sway/current-wallpaper -m fill
 
 set $browser vivaldi-stable
 set $term ghostty
@@ -22,6 +22,7 @@ set $menu wofi --show drun
 set $files spf
 
 bindsym $mod+Return exec $term
+bindsym $mod+Mod1+w exec ~/.config/sway/scripts/wallpaper.sh
 
 bindsym $mod+q kill
 
