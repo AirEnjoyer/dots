@@ -1,3 +1,3 @@
 return {
-  url = "git@github.com:wokerNM/indent-num.nvim",
+  "wokerNM/indent-num.nvim",
 }
