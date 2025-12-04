@@ -28,8 +28,8 @@ set $up k
 set $right l
 
 
-set $browser vivaldi-snapshot
-set $term alacritty
+set $browser vivaldi-stable
+set $term ghostty
 set $files spf
 
 bindsym $mod+Return exec $term
@@ -46,7 +46,7 @@ bindsym $mod+n exec $term -e nvim
 
 bindsym $mod+Shift+c reload
 
-bindsym $mod+Shift+e exec swaymsg exit
+bindsym $mod+Shift+e exec i3-msg exit
 
 bindsym $mod+$left focus left
 bindsym $mod+$down focus down
@@ -100,4 +100,4 @@ bindsym XF86AudioPlay exec playerctl play-pause
 bindsym XF86AudioPrev exec playerctl previous
 
 
-exec_always feh --bg-scale ~/.config/i3/wallpapers/spiderpunk.png
+exec_always feh --bg-scale ~/.config/i3/wallpapers/jojo.png
