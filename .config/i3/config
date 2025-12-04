@@ -34,6 +34,8 @@ set $files spf
 
 bindsym $mod+Return exec $term
 
+bindsym $mod+Mod1+w exec ~/.config/i3/scripts/wallpaper.sh
+
 bindsym $mod+q kill
 
 bindsym $mod+space exec "pgrep rofi >/dev/null 2>&1 && killall rofi || rofi -show drun"
@@ -100,4 +102,4 @@ bindsym XF86AudioPlay exec playerctl play-pause
 bindsym XF86AudioPrev exec playerctl previous
 
 
-exec_always feh --bg-scale ~/.config/i3/wallpapers/jojo.png
+exec_always feh --bg-scale ~/.config/i3/current-wallpaper
