@@ -2,6 +2,9 @@ local options = {
   formatters_by_ft = {
     lua = { "stylua" },
     cpp = { "clang-format" },
+    hpp = { "clang-format" },
+    vert = { "clang-format" },
+    frag = { "clang-format" },
   },
 
   formatters = {
