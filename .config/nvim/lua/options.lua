@@ -25,10 +25,12 @@ vim.api.nvim_set_keymap('v', '<Tab>', ':lua indent_by_num(v:count)<CR>', { norem
 vim.api.nvim_set_keymap('n', '<S-Tab>', ':lua unindent_by_num(v:count)<CR>', { noremap = true, silent = true })
 vim.api.nvim_set_keymap('v', '<S-Tab>', ':lua unindent_by_num(v:count)<CR>', { noremap = true, silent = true })
 
+-- load snippets in json format
 require("luasnip.loaders.from_vscode").lazy_load {
   paths = vim.g.vscode_snippets_path or vim.fn.stdpath "config" .. "/snippets",
 }
 
+-- load snippets in lua format
 require("luasnip.loaders.from_lua").load {
   paths = vim.g.lua_snippets_path or vim.fn.stdpath "config" .. "/lua/snippets",
 }
