@@ -17,13 +17,11 @@ local function unindent_by_num(count)
 end
 
 --Tab + 1-9 to indent by 1-9
-vim.api.nvim_set_keymap('n', '<Tab>', ':lua indent_by_num(v:count)<CR>', { noremap = true, silent = true })
-vim.api.nvim_set_keymap('v', '<Tab>', ':lua indent_by_num(v:count)<CR>', { noremap = true, silent = true })
+vim.api.nvim_set_keymap({"n", "v"}, '<Tab>', ':lua indent_by_num(v:count)<CR>', { noremap = true, silent = true })
 
 
 --Shift-Tab + 1-9 to unindent by 1-9
-vim.api.nvim_set_keymap('n', '<S-Tab>', ':lua unindent_by_num(v:count)<CR>', { noremap = true, silent = true })
-vim.api.nvim_set_keymap('v', '<S-Tab>', ':lua unindent_by_num(v:count)<CR>', { noremap = true, silent = true })
+vim.api.nvim_set_keymap({"n", "v"}, '<S-Tab>', ':lua unindent_by_num(v:count)<CR>', { noremap = true, silent = true })
 
 -- load snippets in json format
 require("luasnip.loaders.from_vscode").lazy_load {
