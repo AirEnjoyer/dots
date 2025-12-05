@@ -10,6 +10,18 @@ map('n', ';', ':', { noremap = true, silent = true, desc = "Enter command mode w
 map("n", "<leader><Tab>", ":bnext<CR>", { desc = "Next Buffer" })
 map("n", "<leader><S-Tab>", ":bprevious<CR>", { desc = "Previous bufffer})
 
+local ls = require("luasnip")
+
+vim.keymap.set({"i"}, "<C-K>", function() ls.expand() end, {silent = true})
+vim.keymap.set({"i", "s"}, "<C-L>", function() ls.jump( 1) end, {silent = true})
+vim.keymap.set({"i", "s"}, "<C-J>", function() ls.jump(-1) end, {silent = true})
+
+vim.keymap.set({"i", "s"}, "<C-E>", function()
+	if ls.choice_active() then
+		ls.change_choice(1)
+	end
+end, {silent = true})
+        
 --map("n", "<Tab>1", ">>", { desc = "Shift to the right" })
 --map("n", "<Tab>2", ">>>>", { desc = "Shift to the right by 2" })
 --map("n", "<Tab>3", ">>>>>>", { desc = "Shift to the right by 3" })
