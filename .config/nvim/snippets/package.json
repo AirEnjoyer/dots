@@ -5,7 +5,15 @@
       {
         "language": "markdown",
         "path": "./markdown.json"
-      }
+      },
+      {
+        "language": "cpp",
+        "path": "./snippets/cpp/cpp.json"
+      },
+      {
+		    "language": "cmake",
+		    "path": "./snippets/cmake.json"
+	    }
     ]
   }
 }
