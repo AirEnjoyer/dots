@@ -10,7 +10,7 @@ local function indent_by_num(count)
 end
 
 vim.api.nvim_set_keymap('n', '<Tab>', ':lua indent_by_num(v:count)<CR>', { noremap = true, silent = true })
-vim.api.nvim_set_keymap('v', '<Tab>', ':lua indent_buy_num(v:count)<CR>', { noremap = true, silent = true })
+vim.api.nvim_set_keymap('v', '<Tab>', ':lua indent_by_num(v:count)<CR>', { noremap = true, silent = true })
 
 o.shiftwidth = 4
 o.tabstop = 4
