@@ -7,6 +7,9 @@ map("n", "<leader>w", ":w<CR>", { desc = "Save" })
 map("n", "<leader>q", ":q<CR>", { desc = "Quit" })
 map('n', ';', ':', { noremap = true, silent = true, desc = "Enter command mode without shift})
 
+map("n", "<leader><Tab>", ":bnext<CR>", { desc = "Next Buffer" })
+map("n", "<leader><S-Tab>", ":bprevious<CR>", { desc = "Previous bufffer})
+
 --map("n", "<Tab>1", ">>", { desc = "Shift to the right" })
 --map("n", "<Tab>2", ">>>>", { desc = "Shift to the right by 2" })
 --map("n", "<Tab>3", ">>>>>>", { desc = "Shift to the right by 3" })
