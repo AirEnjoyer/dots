@@ -309,7 +309,7 @@
     "af": {
       "prefix": "af",
       "body": [
-        "auto ${1:name}( ${2:void} ) -> ${3:auto} {",
+        "auto ${1:name}( ${2:void} )  {",
         "\t${5}",
         "}"
       ],
