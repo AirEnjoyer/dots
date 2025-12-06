@@ -306,8 +306,8 @@
       ],
       "description": "const_cast<type>(expression)"
     },
-    "af": {
-      "prefix": "af",
+    "fn": {
+      "prefix": "fn",
       "body": [
         "auto ${1:name}( ${2:void} )  {",
         "\t${5}",
