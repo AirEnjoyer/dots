@@ -11,8 +11,7 @@ fish_vi_key_bindings
 
 alias bat='batcat'
 alias lg='lazygit'
-alias uf='clear; ufetch'
-alias ff='clear; fastfetch --logo void2'
+alias f='clear; fastfetch'
 alias ls='ls --color=auto'
 alias grep='grep --color=auto'
 alias ...='cd ../..'
