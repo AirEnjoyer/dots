@@ -12,6 +12,7 @@ fish_vi_key_bindings
 alias bat='batcat'
 alias lg='lazygit'
 alias f='clear; fastfetch'
+alias nv='nvim'
 alias ls='ls --color=auto'
 alias grep='grep --color=auto'
 alias ...='cd ../..'
