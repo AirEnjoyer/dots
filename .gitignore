@@ -2,3 +2,5 @@
 .config/mpv/cache
 .config/sway/current-wallpaper
 .config/i3/current-wallpaper
+.config/nvim/lazy-lock.json
+.config/fish/fish-variables
