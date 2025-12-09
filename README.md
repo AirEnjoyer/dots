@@ -5,4 +5,8 @@ To install, make sure you have the dependencies, then run the following:
 for dir in ~/dots/.config/*
     rm -rf ~/.config/$(basename $dir)
 end
+
+```
+```bash
+cd ~/dots ; stow .
 ```
