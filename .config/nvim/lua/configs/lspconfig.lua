@@ -7,6 +7,8 @@ lspconfig.servers = {
   "lua_ls",
   "clangd",
   "neocmake",
+  "glslls",
+  "glsl_analyzer",
 }
 
 local default_servers = {
