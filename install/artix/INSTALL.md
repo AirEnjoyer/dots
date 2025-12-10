@@ -4,7 +4,7 @@ Put these in /etc/pacman.conf
  [lib32]
  Include = /etc/pacman.d/mirrorlist
 
- # Arch
+ \# Arch
  [extra]
  Include = /etc/pacman.d/mirrorlist-arch
 
