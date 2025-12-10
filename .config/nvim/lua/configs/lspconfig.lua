@@ -7,7 +7,6 @@ lspconfig.servers = {
   "lua_ls",
   "clangd",
   "neocmake",
-  "glslls",
   "glsl_analyzer",
 }
 
@@ -55,5 +54,21 @@ vim.lsp.config("lua_ls", {
         preloadFileSize = 10000,
       },
     },
+  },
+})
+
+vim.lsp.config("glsl_analyzer", {
+  on_attach = on_attach,
+  on_init = on_init,
+  capabilities = capabilities,
+
+  filetypes = {
+    "glsl",
+    "vert",
+    "frag",
+    "geom",
+    "tesc",
+    "tese",
+    "comp",
   },
 })
