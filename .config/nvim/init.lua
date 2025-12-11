@@ -37,12 +37,3 @@ require "options"
 vim.schedule(function()
   require "mappings"
 end)
-
-vim.api.nvim_create_autocmd("User", {
-  pattern = "LazyDone",
-  callback = function()
-    pcall(function()
-      require("nvchad.mason").install_all()
-    end)
-  end,
-})

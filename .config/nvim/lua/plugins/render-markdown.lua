@@ -1,9 +1,10 @@
 return {
-  'MeanderingProgrammer/render-markdown.nvim',
-  dependencies = { 'nvim-treesitter/nvim-treesitter', 'echasnovski/mini.icons' },
+  "MeanderingProgrammer/render-markdown.nvim",
+  dependencies = { "nvim-treesitter/nvim-treesitter", "nvim-mini/mini.icons" },
   ---@module 'render-markdown'
   ---@type render.md.UserConfig
-  opts = {
-    render_modes = { 'n', 'c', 't' } 
-  },
+  ft = "markdown",
+  config = function()
+    require "configs.render-markdown"
+  end,
 }
