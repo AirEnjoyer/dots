@@ -1,4 +1,4 @@
 return {
 	"wokerNM/indent-num.nvim",
-	opts = {}
+	opts = {},
 }
