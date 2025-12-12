@@ -7,10 +7,6 @@ return {
 	---@module 'blink.cmp'
 	---@type blink.cmp.Config
 	opts = {
-		servers = {
-			lua_ls = {},
-			clangd = {},
-		},
 		keymap = { preset = "default" },
 
 		appearance = {
