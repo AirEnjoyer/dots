@@ -25,3 +25,21 @@ map("n", "<Leader>dl", dap.run_last, { desc = "Run Last" })
 local dapui = require("dapui")
 map("n", "<Leader>duu", dapui.open, { desc = "Open UI" })
 map("n", "<Leader>duc", dapui.close, { desc = "Close UI" })
+
+local ls = require("luasnip")
+
+vim.keymap.set({ "i" }, "<C-K>", function()
+	ls.expand()
+end, { silent = true })
+vim.keymap.set({ "i", "s" }, "<C-L>", function()
+	ls.jump(1)
+end, { silent = true })
+vim.keymap.set({ "i", "s" }, "<C-J>", function()
+	ls.jump(-1)
+end, { silent = true })
+
+vim.keymap.set({ "i", "s" }, "<C-E>", function()
+	if ls.choice_active() then
+		ls.change_choice(1)
+	end
+end, { silent = true })
