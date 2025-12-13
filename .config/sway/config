@@ -17,7 +17,7 @@ set $right l
 exec swaybg -i ~/.config/sway/current-wallpaper -m fill
 
 
-set $browser vivaldi-stable
+set $browser zen
 set $term ghostty
 set $menu wofi --show drun
 set $files spf

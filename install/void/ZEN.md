@@ -13,3 +13,8 @@ Then link the binary file to /usr/local/bin/zen
 sudo ln -s /opt/zen/zen /usr/local/bin/zen
 ```
 Then you can use it.
+
+Optionally to have it appear in app launchers:
+```bash
+sudo cp ~/dots/zen.desktop /usr/share/applications/zen.desktop
+```
