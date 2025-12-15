@@ -1,9 +1,9 @@
 exec pipewire
 exec pipewire-pulse
 exec wireplumber
-exec swayosd-server
 exec mako
 exec waybar
+exec swayosd-server
 
 default_border none 
 
@@ -20,6 +20,10 @@ output eDP-1 {
 	mode 1440x900@59.996Hz
 	pos 0 0 
 }
+
+focus output eDP-1
+
+
 
 
 set $browser zen
@@ -73,9 +77,9 @@ bindsym $mod+Shift+0 move container to workspace number 10
 
 bindsym $mod+f fullscreen
 
-bindsym XF86AudioRaiseVolume exec swayosd-client --output-volume raise
-bindsym XF86AudioLowerVolume exec swayosd-client --output-volume lower
-bindsym XF86AudioMute exec swayosd-client --output-volume mute-toggle
+bindsym XF86AudioRaiseVolume exec swayosd-client --output-volume raise --monitor=eDP-1
+bindsym XF86AudioLowerVolume exec swayosd-client --output-volume lower --monitor=eDP-1
+bindsym XF86AudioMute exec swayosd-client  --output-volume mute-toggle --monitor=eDP-1
 
 
 #Keychron Wheel + Mod to scroll through workspaces
@@ -84,23 +88,23 @@ bindsym $mod+XF86AudioLowerVolume workspace prev
 
 
 #Keychron wheel + alt to change brightness
-bindsym Alt+XF86AudioRaiseVolume exec swayosd-client --brightness +5
-bindsym Alt+XF86AudioLowerVolume exec swayosd-client --brightness -5
+bindsym Alt+XF86AudioRaiseVolume exec swayosd-client --brightness +5 --monitor=eDP-1
+bindsym Alt+XF86AudioLowerVolume exec swayosd-client --brightness -5 --monitor=eDP-1
 
 
-bindsym XF86MonBrightnessUp exec swayosd-client --brightness +5
-bindsym XF86MonBrightnessDown exec swayosd-client --brightness -5
+bindsym XF86MonBrightnessUp exec swayosd-client --brightness +5 --monitor=eDP-1
+bindsym XF86MonBrightnessDown exec swayosd-client --brightness -5 --monitor=eDP-1
 
-bindsym Shift+XF86MonBrightnessUp exec swayosd-client --brightness +1
-bindsym Shift+XF86MonBrightnessDown exec swayosd-client --brightness -1
+bindsym Shift+XF86MonBrightnessUp exec swayosd-client --brightness +1 --monitor=eDP-1
+bindsym Shift+XF86MonBrightnessDown exec swayosd-client --brightness -1 --monitor=eDP-1
 
 bindsym $mod+tab workspace next
 bindsym $mod+Shift+tab workspace prev
 
-bindsym XF86AudioNext exec swayosd-client --playerctl next
-bindsym XF86AudioPause exec swayosd-client --playerctl play-pause
-bindsym XF86AudioPlay exec swayosd-client --playerctl play-pause
-bindsym XF86AudioPrev exec swayosd-client --playerctl previous
+bindsym XF86AudioNext exec swayosd-client --playerctl next --monitor=eDP-1
+bindsym XF86AudioPause exec swayosd-client --playerctl play-pause --monitor=eDP-1
+bindsym XF86AudioPlay exec swayosd-client --playerctl play-pause --monitor=eDP-1
+bindsym XF86AudioPrev exec swayosd-client --playerctl previous --monitor=eDP-1
 
 bindsym $mod+g exec grim -t ppm - | satty --filename - --output-filename ~/Pictures/Screenshots/satty-$(date +'%Y%m%d-%H:%M:%S').png
 bindsym $mod+s exec grim -g "$(slurp -c '#ff0000ff')" -t ppm - | satty --filename - --output-filename ~/Pictures/Screenshots/satty-$(date +'%Y%m%d-%H:%M:%S').png
