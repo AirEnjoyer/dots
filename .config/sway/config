@@ -16,6 +16,11 @@ set $right l
 
 exec swaybg -i ~/.config/sway/current-wallpaper -m fill
 
+output eDP-1 {
+	mode 1440x900@59.996Hz
+	pos 0 0 
+}
+
 
 set $browser zen
 set $term ghostty
