@@ -17,3 +17,16 @@ figlet yourUsername
 ```
 
 and copy and paste the output into a file of your choice, then change the section of ~/.config/fastfetch/config.jsonc that says the path to woker.txt to the path to the new txt file.
+
+for example, what i did was 
+```bash
+figlet woker
+```
+
+then copied it, and since the fastfetch config path didn't exist I ran
+```bash
+fastfetch --gen-config-full
+```
+but you wont have to because it's included in the dots.
+then i pasted the figlet output into ~/.config/fastfetch/woker.txt
+and changed the logo path to ~/.config/fastfetch/woker.txt
