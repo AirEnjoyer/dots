@@ -46,3 +46,4 @@ shell-integration-features = no-cursor
 
 # Keyboard bindings
 keybind = f11=toggle_fullscreen
+keybind = ctrl+t=text:tmux\n
