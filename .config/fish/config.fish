@@ -53,3 +53,5 @@ if not contains "$HOME/.local/bin" $PATH
 end
 
 set -U fish_greeting ""
+
+bind \ct 'tmux'

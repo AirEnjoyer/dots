@@ -47,3 +47,10 @@ cyan = '#b4b4b4'
 white = '#d5d5d5'
 
 
+[keyboard]
+bindings = [
+    { key = "T", mods = "Control", chars = "tmux\n" }
+]
+
+[env]
+term = "xterm-256color"
