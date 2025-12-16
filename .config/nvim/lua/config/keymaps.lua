@@ -1,7 +1,8 @@
 local map = vim.keymap.set
 map("n", "<Leader>e", "<cmd>Oil<CR>", { desc = "Open Parent Directory in Oil" })
 map("n", "<Leader>ff", '<cmd>lua require("fzf-lua").files()<CR>', { desc = "fzf through files" })
-
+map("n", "<Leader>sv", "<cmd>vsplit<CR>", { desc = "vertical split", silent = true })
+map("n", "<Leader>sh", "<cmd>split<CR>", { desc = "horizontal split", silent = true })
 map("n", "<leader>w", ":w<CR>", { desc = "Save" })
 map("n", "<leader>q", ":q<CR>", { desc = "Quit" })
 map("n", ";", ":", { noremap = true, desc = "Enter command mode without shift" })
@@ -31,13 +32,13 @@ map("n", "<Leader>duc", dapui.close, { desc = "Close UI" })
 
 local ls = require("luasnip")
 
-map({ "i" }, "<C-S-K>", function()
+map({ "i" }, "<C-K>", function()
 	ls.expand()
 end, { silent = true })
-map({ "i", "s" }, "<C-S-l>", function()
+map({ "i", "s" }, "<C-l>", function()
 	ls.jump(1)
 end, { silent = true })
-map({ "i", "s" }, "<C-S-J>", function()
+map({ "i", "s" }, "<C-J>", function()
 	ls.jump(-1)
 end, { silent = true })
 
