@@ -10,7 +10,6 @@ set -gx BAT_THEME base16
 
 fish_vi_key_bindings
 
-# alias bat='batcat'
 alias focus1="swaymsg workspace 1 output eDP-1"
 alias lg='lazygit'
 alias f='clear; fastfetch'
