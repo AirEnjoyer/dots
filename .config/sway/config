@@ -21,10 +21,7 @@ output eDP-1 {
 	pos 0 0 
 }
 
-focus output eDP-1
-
-
-
+exec --no-startup-id swaymsg -t get_outputs | grep 'HDMI-A-1' | grep -q connected && swaymsg output HDMI-A-1 focus
 
 set $browser zen
 set $term ghostty
