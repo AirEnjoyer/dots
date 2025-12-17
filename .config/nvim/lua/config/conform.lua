@@ -11,7 +11,7 @@ local options = {
 				"-style={ \
                         IndentWidth: 4, \
                         TabWidth: 4, \
-                        UseTab: Never, \
+                        UseTab: Always, \
                         AccessModifierOffset: 0, \
                         IndentAccessModifiers: true, \
                         PackConstructorInitializers: Never}",
