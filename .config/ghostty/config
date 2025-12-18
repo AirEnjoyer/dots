@@ -1,6 +1,3 @@
-# Dynamic theme colors
-
-# normal colors
 palette = 0=#D35F5F
 palette = 1=#D35F5F
 palette = 2=#AC4040
@@ -45,5 +42,5 @@ cursor-style-blink = false
 shell-integration-features = no-cursor
 
 # Keyboard bindings
-keybind = f11=toggle_fullscreen
 keybind = ctrl+t=text:tmux\n
+keybind = alt+c=text:clear\n
