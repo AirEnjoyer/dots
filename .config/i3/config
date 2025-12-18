@@ -28,7 +28,7 @@ set $up k
 set $right l
 
 
-set $browser vivaldi-stable
+set $browser zen
 set $term ghostty
 set $files spf
 
@@ -41,7 +41,7 @@ bindsym $mod+q kill
 bindsym $mod+space exec "pgrep rofi >/dev/null 2>&1 && killall rofi || rofi -show drun"
 
 bindsym $mod+b exec $browser
-bindsym $mod+shift+b exec $browser --incognito
+bindsym $mod+shift+b exec $browser --private-window
 
 bindsym $mod+e exec $term -e $files
 bindsym $mod+n exec $term -e nvim

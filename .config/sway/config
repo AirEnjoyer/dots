@@ -21,7 +21,15 @@ output eDP-1 {
 	pos 0 0 
 }
 
+input type:touchpad {
+    tap enabled
+    natural_scroll enabled
+}
+
 exec --no-startup-id swaymsg -t get_outputs | grep 'HDMI-A-1' | grep -q connected && swaymsg output HDMI-A-1 focus
+
+
+exec --no-startup-id swaymsg -t get_outputs | grep 'HDMI-A-1' | grep -q connected && swaymsg output HDMI-A-1 mode 1920x1080@60.000Hz focus
 
 set $browser zen
 set $term ghostty

@@ -1,4 +1,5 @@
 set -gx PATH "$HOME/.local/bin" $PATH
+set -gx PATH $HOME/.cargo/bin $PATH
 set -gx SDL_VIDEODRIVER x11
 set -gx CC clang
 set -gx CXX clang++
