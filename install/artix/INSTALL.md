@@ -63,9 +63,9 @@ cd ~/dots
 stow .
 ```
 
-to change default shell to fish
+to change default shell to zsh
 ```bash
-sudo chsh $USER -s $(which fish)
+sudo chsh $USER -s $(which zsh)
 ```
 To install superfile
 ```bash
