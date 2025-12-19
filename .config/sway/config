@@ -1,9 +1,9 @@
+exec swayosd-server
 exec pipewire
 exec pipewire-pulse
 exec wireplumber
 exec mako
 exec waybar
-exec swayosd-server
 
 default_border none 
 
@@ -25,9 +25,6 @@ input type:touchpad {
     tap enabled
     natural_scroll enabled
 }
-
-exec --no-startup-id swaymsg -t get_outputs | grep 'HDMI-A-1' | grep -q connected && swaymsg output HDMI-A-1 focus
-
 
 exec --no-startup-id swaymsg -t get_outputs | grep 'HDMI-A-1' | grep -q connected && swaymsg output HDMI-A-1 mode 1920x1080@60.000Hz focus
 
