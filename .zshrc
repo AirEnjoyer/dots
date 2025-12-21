@@ -60,5 +60,8 @@ run() {
 eval "$(starship init zsh)"
 eval "$(zoxide init zsh)"
 
+echo -ne '\e[6 q'
+
 source $ZSH/oh-my-zsh.sh
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+
