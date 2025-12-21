@@ -16,6 +16,7 @@ export EDITOR=nvim
 export BAT_THEME=base16
 
 alias focus1="swaymsg workspace 1 output eDP-1"
+alias tat="tmux attach -t"
 alias lg='lazygit'
 alias f='clear; fastfetch'
 alias nv='nvim'
