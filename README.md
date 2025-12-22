@@ -30,3 +30,14 @@ fastfetch --gen-config-full
 but you wont have to because it's included in the dots.
 then i pasted the figlet output into ~/.config/fastfetch/woker.txt
 and changed the logo path to ~/.config/fastfetch/woker.txt
+
+To add my dhcpcd custom thing to auto turn on wlp3s0 (my wifi module) move dhcpcd-wlp3s0 to /etc/sv, then 
+```bash
+sudo chmod +x /etc/sv/dhcpcd-wlp3s0/run
+```
+
+then ```bash
+sudo ln -s /etc/sv/dhcpcd-wlp3s0 /var/service/
+```
+
+Then reboot
