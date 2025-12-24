@@ -1,1 +1,1 @@
-return { "wokerNM/indent-num.nvim", opts = {} }
+return { "wokerNM/indent-num.nvim", lazy = false, opts = {} }
